@@ -3,6 +3,7 @@ import React from "react";
 
 import {BackgroundLines} from "@/components/ui/background-lines";
 import Navbar from "@/components/Navbar";
+import HomeButton from "@/components/ui/HomeButton";
 
 export function Home() {
   return (
@@ -17,6 +18,7 @@ export function Home() {
             Your all-in-one platorm for collaborative DSA problem-solving, coding, and interview
             prep.
           </p>
+          <HomeButton />
         </BackgroundLines>
       </div>
     </div>

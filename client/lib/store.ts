@@ -1,11 +1,11 @@
 import {configureStore} from "@reduxjs/toolkit";
 
-import miscSlice from "./features/misc/miscSlice";
+import authReducer from "./features/auth/authSlice";
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
-      misc: miscSlice,
+      auth: authReducer,
     },
   });
 };
