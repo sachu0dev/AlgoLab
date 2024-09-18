@@ -6,13 +6,14 @@ import {MoveRight, Telescope} from "lucide-react";
 import {Button} from "@/components/ui/button";
 import {RootState} from "@/lib/store";
 
+
 const HomeButton = () => {
   const {user} = useSelector((state: RootState) => state.auth);
 
   return (
     <div className="flex space-x-8 mt-8">
       <Button
-        className="bg-black text-white dark:bg-white dark:text-black flex
+        className=" flex
        gap-2"
         variant="outline"
       >
