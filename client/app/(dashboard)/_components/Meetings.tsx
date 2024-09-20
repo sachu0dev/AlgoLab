@@ -3,7 +3,6 @@ import React from 'react'
 
 import MeetingCard from "./meetings-card"
 
-
 const Meetings = () => {
   return (
     <div className='px-1 py-4 flex flex-col'>
