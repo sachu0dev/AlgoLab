@@ -2,6 +2,8 @@ import GradualSpacing from "@/components/magicui/gradual-spacing";
 
 import Meetings from "./_components/Meetings";
 import JoinAndChat from "./_components/join-chat"
+import DialogCard from "./_components/new-meeting"
+import Link from "next/link";
 
 export default function Dashboard() {
   return (
@@ -13,12 +15,16 @@ export default function Dashboard() {
             text="Dashborad"
           />
         </h1>
-        <button className="shadow-[0_0_0_3px_#000000_inset] w-[10rem] px-2 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold">
-          New Meeting +
-        </button>
-        <button className="shadow-[0_0_0_3px_#000000_inset] w-[10rem] px-2 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold">
-          Mange Meetings
-        </button>
+        <DialogCard>
+          <button className="shadow-[0_0_0_3px_#000000_inset] w-[10rem] px-2 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold">
+            New Meeting +
+          </button>
+        </DialogCard>
+        <Link href={"manage"}>
+          <button className="shadow-[0_0_0_3px_#000000_inset] w-[10rem] px-2 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold">
+            Mange Meetings
+          </button>
+        </Link>
         <button className="shadow-[0_0_0_3px_#000000_inset] w-[10rem] px-2 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold">
           Community
         </button>

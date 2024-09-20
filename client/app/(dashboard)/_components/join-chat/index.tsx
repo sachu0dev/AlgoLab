@@ -17,13 +17,10 @@ import Message from "./messages"
         </aside>
         <div className='bg-background px-2 pt-3 flex-[0.5] ml-16 rounded-md'>
             <h1>{"#"} ASK TO GPT</h1>
-            <div className='overflow-y-auto max-h-[7.2rem] flex flex-col'>
-                <Message me={true}/>
-              
-                <Message me={false}/>
+            <div className='overflow-y-auto h-[7.2rem] max-h-[7.3rem] flex flex-col'>
             </div>
             <form className='flex items-center space-x-2 my-[5px] '>
-            <Input type="text" className='p-[1.4rem] dark:bg-gray-900 bg-slate-900' placeholder='you have any doubt if yes feel free to ask me'/>
+            <Input type="text" className='dark:bg-gray-900 bg-slate-900' placeholder='you have any doubt if yes feel free to ask me'/>
             <Button className='p-4' type="submit">Join</Button>
             </form>
         </div>
